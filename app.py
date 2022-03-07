@@ -22,7 +22,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "s
 
 # Remove tracking modifications
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
+postgres://jziubvhueetwpp:f5ee9211d863fbe45a4d7be481d397866ab0b9da1a1047d88ff46cf13d256509@ec2-44-194-113-156.compute-1.amazonaws.com:5432/d14p70h1b5l3co
 db = SQLAlchemy(app)
 
 Pet = create_classes(db)
